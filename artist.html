@@ -16,6 +16,15 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
 
+    <!-- search bar functionality -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<script src="tipuesearch/tipuesearch_content.js"></script>
+<script src="tipuesearch/tipuesearch_set.js"></script>
+<script src="tipuesearch/tipuesearch.min.js"></script>
+
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -37,16 +46,15 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">A.R.T.I.S.T.</a>
+          <a class="navbar-brand" href="artist.html">A.R.T.I.S.T.	Assisted Reproductive Technology Insight Screening Tool</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Help</a></li>
+            <li><a href="artist.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
           </ul>
-          <form class="navbar-form navbar-right">
-            <input type="text" class="form-control" placeholder="Search...">
+          <form action="search.html"class="navbar-form navbar-right">
+            <input type="text" name="q" id="tipue_search_input" autocomplete="off" required class="form-control" placeholder="Search...">
           </form>
         </div>
       </div>
@@ -57,22 +65,50 @@
       <div class="row">
         <div class="col-sm-3 col-md-2 sidebar topiclist">
           <ul class="nav nav-sidebar">
-            <li class="active"><a >Main <span class="sr-only">(current)</span></a></li>
-            <li><a >Topic1</a></li>
-            <li><a >Topic2</a></li>
-            <li><a >Topic3</a></li>
+            <li class="active"><a >Core elements and their risk<span class="sr-only">(current)</span></a></li>
+            <li><a >Medications for IVF Treatment</a></li>
+            <li><a >Transvaginal Oocyte Retrieval</a></li>
+            <li><a >Embryo Transfer</a></li>
+            <li><a >IVF and Embryo Culture</a></li>
+            <li><a >Hormonal Support of the Uterine Lining</a></li>
           </ul>
           <ul class="nav nav-sidebar">
-            <li><a >Topic</a></li>
-            <li><a >Topic again</a></li>
-            <li><a >One more Topic</a></li>
-            <li><a >Another Topic</a></li>
-            <li><a >More Topics</a></li>
+          <li class="active"><a >Additional elements and their risk<span class="sr-only">(current)</span></a>
+            <li><a >Intracytoplasmic Sperm Injection (ICSI)</a></li>
+            <li><a >Assisted Hatching</a></li>
+            <li><a >Embryo Disposition</a></li>
+            <li><a >Cryopreserved Embryo Storage</a></li>
+            <li><a >Donated or Research Embryo Fate</a></li>
           </ul>
           <ul class="nav nav-sidebar">
-            <li><a >Topic again</a></li>
-            <li><a >One more Topic</a></li>
-            <li><a >Another Topic</a></li>
+          <li class="active"><a >Risks to the Woman<span class="sr-only">(current)</span></a>
+            <li><a >Ovarian Hyperstimulation Syndrome</a></li>
+            <li><a >Cancer</a></li>
+            <li><a >Risks of Pregnancy</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+          <li class="active"><a >Risks to offspring<span class="sr-only">(current)</span></a>
+            <li><a >Overall Risks</a></li>
+            <li><a >Birth Defects</a></li>
+            <li><a >Risks of Multiple Pregnancy </a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+          	<li class="active"><a >Ethical and Religious Considerations in Infertility Treatment <span class="sr-only">(current)</span></a>          
+          </ul>
+          <ul class="nav nav-sidebar">
+          	<li class="active"><a >Psychosocial Effects of Infertility Treatment <span class="sr-only">(current)</span></a>            
+          </ul>
+          <ul class="nav nav-sidebar">
+          	<li class="active"><a >Legal Considerations to Offspring<span class="sr-only">(current)</span></a>            
+          </ul>
+          <ul class="nav nav-sidebar">
+          	<li class="active"><a >Alternatives to IVF<span class="sr-only">(current)</span></a>         
+          </ul>
+          <ul class="nav nav-sidebar">
+          	<li class="active"><a >Reporting Outcomes<span class="sr-only">(current)</span></a>           
+          </ul>
+          <ul class="nav nav-sidebar">
+          	<li class="active"><a >Financial<span class="sr-only">(current)</span></a>         
           </ul>
         </div>
       </div>
@@ -130,6 +166,12 @@
       });
 
     </script>
+
+    <script>
+	$(document).ready(function() {
+	     $('#tipue_search_input').tipuesearch();
+	});
+	</script>
   
   </body>
 </html>
