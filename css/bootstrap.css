@@ -55,7 +55,7 @@ abbr[title] {
 }
 b,
 strong {
-  font-weight: bold;
+  font-weight: bolder;
 }
 dfn {
   font-style: italic;
@@ -4212,7 +4212,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-nav > li > a {
   padding-top: 10px;
   padding-bottom: 10px;
-  line-height: 20px;
+  line-height: 20px
 }
 @media (max-width: 767px) {
   .navbar-nav .open .dropdown-menu {
@@ -4844,7 +4844,6 @@ a.badge:focus {
   margin-bottom: 30px;
   color: inherit;
   background-color: #eee;
-  float: right;
 }
 .jumbotron h1,
 .jumbotron .h1 {
