@@ -4844,6 +4844,7 @@ a.badge:focus {
   margin-bottom: 30px;
   color: inherit;
   background-color: #eee;
+  text-align: justify;
 }
 .jumbotron h1,
 .jumbotron .h1 {
@@ -4860,9 +4861,11 @@ a.badge:focus {
 .container .jumbotron,
 .container-fluid .jumbotron {
   border-radius: 6px;
+  
 }
 .jumbotron .container {
   max-width: 100%;
+
 }
 @media screen and (min-width: 768px) {
   .jumbotron {
