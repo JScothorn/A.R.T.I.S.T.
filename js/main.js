@@ -82,7 +82,12 @@ define([
 		_.each(locations, function(l) {
 			l = l.split(".html")[0];
 			var object = _.flatten(_.pluck(_.where(that.object, {name: l}), "children"));
-			that.list = that.object = object;
+			if ( !_.isEmpty(object) && !_.isUndefined(object[0])) {
+				that.list = that.object = object;
+			} else {
+				that.list = [];
+				that.object = object = {};
+}
 		});
 
 		// UPDATE THE BREADCRUMB
