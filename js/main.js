@@ -86,7 +86,7 @@ define([
 				that.list = that.object = object;
 			} else {
 				that.list = [];
-				that.object = object = {};
+			that.object = object = {};
 }
 		});
 
