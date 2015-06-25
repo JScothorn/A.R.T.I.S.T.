@@ -9,6 +9,7 @@ define([
 	"use strict";
 
 	// LOCAL VARS 
+<<<<<<< Updated upstream
 	var SITE_ROOT = "http://130.108.85.103//",
 		templates = TemplateLoader(),
 		pagesObject = [{name: "home", url: "home/home.html", children:
