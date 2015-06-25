@@ -10,7 +10,7 @@ define([
 
 	// LOCAL VARS 
 
-	var SITE_ROOT = "http://130.108.85.103/",
+	var SITE_ROOT = window.location,
 		templates = TemplateLoader(),
 		pagesObject = [{name: "home", url: "home/home.html", children:
 						 [{name: "Risks", url: "home/Risks.html", children: 
@@ -67,14 +67,15 @@ define([
 			});
 
 		$("#content").html(renderHTML);
-		render(window.location.href);
+		render(window.location+"home.html");
 	} 
 
 	// RENDER THE CONTENT AND NAVIGATION BUTTONS
 	var render = function(href) {
 		
-		var name = _.last(href.split("/")),
-			locations = _.last(href.split(SITE_ROOT)).split("/"),
+		var name = _.last(href.split("/"));
+		name = name==="" ? "home.html" : name;
+		var locations = _.last(href.split(SITE_ROOT)).split("/"),
 			page = _.where(templates,{name: name})[0],
 			n = name.split(".")[0],
 			back = name==="home.html" ? false : true;
