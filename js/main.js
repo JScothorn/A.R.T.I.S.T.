@@ -2,8 +2,9 @@ define([
 	'checkMobile',
 	'templateLoader',
 	'text!contentTemplate.html',
-	'text!nav_buttons.html'
-], function(CheckMobile, TemplateLoader, Layout, Buttons) {
+	'text!nav_buttons.html',
+	'dotdotdot'
+], function(CheckMobile, TemplateLoader, Layout, Buttons, Dot) {
 
 	"use strict";
 
@@ -143,6 +144,10 @@ define([
 			e.preventDefault();
 			e.stopPropagation();
 			render(e.currentTarget.href);
+		});
+
+		$('.dot').dotdotdot({
+			height	: "20px",
 		});
 	}
 
