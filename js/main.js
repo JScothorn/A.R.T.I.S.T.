@@ -9,7 +9,12 @@ define([
 	"use strict";
 
 	// LOCAL VARS 
+<<<<<<< HEAD
 	var SITE_ROOT = "/130.108.85.103/",
+=======
+
+	var SITE_ROOT = "http://130.108.85.103//",
+>>>>>>> a9ec855ef25c62b354c5599ecdb897f5beafd8f0
 		templates = TemplateLoader(),
 		pagesObject = [{name: "home", url: "home/home.html", children:
 						 [{name: "Risks", url: "home/Risks.html", children: 
