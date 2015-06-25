@@ -67,12 +67,10 @@ define([
 			});
 
 		$("#content").html(renderHTML);
-<<<<<<< HEAD
-		render(window.location+"home.html");
-=======
+
 		var href = window.location.href.indexOf("home") > 0 ? window.location.href : window.location.href+"home.html";
 		render(href);
->>>>>>> 3a514bbf558dc3b98a995be95c2e80f90bfdbb9a
+
 	} 
 
 	// RENDER THE CONTENT AND NAVIGATION BUTTONS
