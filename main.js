@@ -16,7 +16,9 @@ require.config({
 
         init: 'js/main',
         templateLoader: 'js/templateLoader', 
-        checkMobile: 'js/checkMobile'
+        checkMobile: 'js/checkMobile',
+
+    dotdotdot: 'js/dotdotdot.min'
     },
     // shim makes define headers nicer...
     shim: {
@@ -38,7 +40,11 @@ require.config({
         },
         checkMobile: {
             deps: ['swig', 'bootstrap']
-        }
+        },
+    dotdotdot: {
+            deps: ['jquery'],
+            exports: 'dotdotdot'
+        },
 
     }
 });
