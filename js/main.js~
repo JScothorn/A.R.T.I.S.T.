@@ -9,16 +9,8 @@ define([
 	"use strict";
 
 	// LOCAL VARS 
-<<<<<<< HEAD
-	var SITE_ROOT = "/130.108.85.103/",
-=======
-
-<<<<<<< HEAD
-	var SITE_ROOT = "http://130.108.85.103//",
->>>>>>> a9ec855ef25c62b354c5599ecdb897f5beafd8f0
-=======
-	var SITE_ROOT = window.location,
->>>>>>> d4d308c25422962ea04900fc3c0c0afdb1e48637
+	var SITE_ROOT = window.location,				  // THIS IS FOR WEB SERVER
+	// var SITE_ROOT = "file:///home/justin/Documents/A.R.T.I.S.T./", // THIS IS FOR LOCAL WORK
 		templates = TemplateLoader(),
 		pagesObject = [{name: "home", url: "home/home.html", children:
 						 [{name: "Risks", url: "home/Risks.html", children: 

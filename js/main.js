@@ -9,8 +9,8 @@ define([
 	"use strict";
 
 	// LOCAL VARS 
-
-	var SITE_ROOT = window.location,
+	var SITE_ROOT = window.location,				  // THIS IS FOR WEB SERVER
+	// var SITE_ROOT = "file:///home/justin/Documents/A.R.T.I.S.T./", // THIS IS FOR LOCAL WORK
 		templates = TemplateLoader(),
 		pagesObject = [{name: "home", url: "home/home.html", children:
 						 [{name: "Risks", url: "home/Risks.html", children: 
