@@ -9,8 +9,13 @@ define([
 	"use strict";
 
 	// LOCAL VARS 
+<<<<<<< HEAD
 	var SITE_ROOT = window.location,				  // THIS IS FOR WEB SERVER
 	// var SITE_ROOT = "file:///home/justin/Documents/A.R.T.I.S.T./", // THIS IS FOR LOCAL WORK
+=======
+
+	var SITE_ROOT = window.location.href.indexOf("home") > 0 ? window.location.href.split("home.html")[0] : window.location.href,
+>>>>>>> 3a514bbf558dc3b98a995be95c2e80f90bfdbb9a
 		templates = TemplateLoader(),
 		pagesObject = [{name: "home", url: "home/home.html", children:
 						 [{name: "Risks", url: "home/Risks.html", children: 
@@ -67,7 +72,12 @@ define([
 			});
 
 		$("#content").html(renderHTML);
+<<<<<<< HEAD
 		render(window.location+"home.html");
+=======
+		var href = window.location.href.indexOf("home") > 0 ? window.location.href : window.location.href+"home.html";
+		render(href);
+>>>>>>> 3a514bbf558dc3b98a995be95c2e80f90bfdbb9a
 	} 
 
 	// RENDER THE CONTENT AND NAVIGATION BUTTONS
