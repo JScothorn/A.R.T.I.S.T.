@@ -10,7 +10,7 @@ define([
 
 	// LOCAL VARS 
 
-	var SITE_ROOT = "http://130.108.85.103//",
+	var SITE_ROOT = "http://130.108.85.103/",
 		templates = TemplateLoader(),
 		pagesObject = [{name: "home", url: "home/home.html", children:
 						 [{name: "Risks", url: "home/Risks.html", children: 
