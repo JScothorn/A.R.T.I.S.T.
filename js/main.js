@@ -108,7 +108,7 @@ define([
 				url=url.split(".html")[0]+"/"+thisPage;
 			}
 			var text = thisPage.split(".html")[0]||thisPage;
-			$('.breadcrumb').append('<li><a class="link" href="'+url+'">'+text+'</a></li>');
+			$('.breadcrumb').append('<li><a class="faunt link" href="'+url+'">'+text+'</a></li>');
 			if (i===locations.length-2) {
 				that.lastPage = url;
 			}
