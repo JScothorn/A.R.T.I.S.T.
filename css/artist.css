@@ -49,6 +49,19 @@ li > a:focus {
 	background-color: #004787;
 }
 
+        table, th, td {
+        border: 1px solid black;
+        text-align: center;
+        padding: 5px;
+    }
+    caption{
+      text-decoration: underline;
+      padding: 5px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+
 @media (max-width : 767px) {
 	.row {
 		margin-left: 0px;
