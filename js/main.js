@@ -13,7 +13,20 @@ define([
 	var SITE_ROOT = window.location.href.indexOf("home") > 0 ? window.location.href.split("home.html")[0] : window.location.href,
 		templates = TemplateLoader(),
 		pagesObject = [{name: "home", url: "home/home.html", children:
-						 [{name: "Risks", url: "home/Risks.html", children: 
+						 [{name: "Technique_of_IVF", url: "home/Technique_of_IVF.html", children: 
+						 	[{name: "Core_Elements_and_Their_Risks", url: "home/Technique_of_IVF/Core_Elements_and_Their_Risks.html", children: 
+						 		[{name: "Medications for IVF Treatment", url: "home/Technique_of_IVF/Core_Elements_and_Their_Risks/medications.html"},
+						 		{name: "Embryo Transfer", url: "home/Technique_of_IVF/Core_Elements_and_Their_Risks/embryo_transfer.html"},
+						 		{name: "Transvaginal Oocyte Retrieval", url: "home/Technique_of_IVF/Core_Elements_and_Their_Risks/oocyte_retrieval.html"},
+						 		{name: "IVF and Embryo Culture", url: "home/Technique_of_IVF/Core_Elements_and_Their_Risks/culture.html"},
+						 		{name: "Hormonal Support of the Utarine Lining", url: "home/Technique_of_IVF/Core_Elements_and_Their_Risks/uterine_lining.html"}] },
+						 	{name: "Additional_Elements_and_Their_Risks", url: "home/Technique_of_IVF/Additional_Elements_and_Their_Risks.html", children: 
+						 		[{name: "Intracytoplasmic Sperm Injection", url: "home/Technique_of_IVF/Additional_Elements_and_Their_Risks/injection.html"},
+						 		{name: "Embryo Disposition", url: "home/Technique_of_IVF/Additional_Elements_and_Their_Risks/embryo_disposition.html"},
+						 		{name: "Assisted Hatching", url: "home/Technique_of_IVF/Additional_Elements_and_Their_Risks/hatching.html"},
+						 		{name: "Cryopreserved Embryo Storage", url: "home/Technique_of_IVF/Additional_Elements_and_Their_Risks/storage.html"},
+						 		{name: "Donated or Research Embryo Fate", url: "home/Technique_of_IVF/Additional_Elements_and_Their_Risks/research.html"}] }] },
+						 {name: "Risks", url: "home/Risks.html", children: 
 						 	[{name: "Alternatives to IVF", url: "home/Risks/alternatives.html"},
 						 	{name: "Risks_to_Offspring", url: "home/Risks/Risks_to_Offspring.html", children: 
 						 		[{name: "Overall Risks", url: "home/Risks/Risks_to_Offspring/overall_risks.html"},
@@ -29,19 +42,7 @@ define([
 					  	 	{name: "Legal Considerations to Offspring", url: "home/Social_Legal/offspring.html"},
 					  	 	{name: "Financial", url: "home/Social_Legal/financial.html"},
 					  	 	{name: "Reporting Outcomes", url: "home/Social_Legal/outcomes.html"}], },
-					     {name: "Technique_of_IVF", url: "home/Technique_of_IVF.html", children: 
-						 	[{name: "Core_Elements_and_Their_Risks", url: "home/Technique_of_IVF/Core_Elements_and_Their_Risks.html", children: 
-						 		[{name: "Medications for IVF Treatment", url: "home/Technique_of_IVF/Core_Elements_and_Their_Risks/medications.html"},
-						 		{name: "Embryo Transfer", url: "home/Technique_of_IVF/Core_Elements_and_Their_Risks/embryo_transfer.html"},
-						 		{name: "Transvaginal Oocyte Retrieval", url: "home/Technique_of_IVF/Core_Elements_and_Their_Risks/oocyte_retrieval.html"},
-						 		{name: "IVF and Embryo Culture", url: "home/Technique_of_IVF/Core_Elements_and_Their_Risks/culture.html"},
-						 		{name: "Hormonal Support of the Utarine Lining", url: "home/Technique_of_IVF/Core_Elements_and_Their_Risks/uterine_lining.html"}] },
-						 	{name: "Additional_Elements_and_Their_Risks", url: "home/Technique_of_IVF/Additional_Elements_and_Their_Risks.html", children: 
-						 		[{name: "Intracytoplasmic Sperm Injection", url: "home/Technique_of_IVF/Additional_Elements_and_Their_Risks/injection.html"},
-						 		{name: "Embryo Disposition", url: "home/Technique_of_IVF/Additional_Elements_and_Their_Risks/embryo_disposition.html"},
-						 		{name: "Assisted Hatching", url: "home/Technique_of_IVF/Additional_Elements_and_Their_Risks/hatching.html"},
-						 		{name: "Cryopreserved Embryo Storage", url: "home/Technique_of_IVF/Additional_Elements_and_Their_Risks/storage.html"},
-						 		{name: "Donated or Research Embryo Fate", url: "home/Technique_of_IVF/Additional_Elements_and_Their_Risks/research.html"}] }] }] }],
+					     ] }],
 		that = {
 			list: [],
 			object: {},
