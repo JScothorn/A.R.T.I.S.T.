@@ -14,7 +14,8 @@ define([
 		templates = TemplateLoader(),
 		pagesObject = [{name: "home", url: "home/home.html", children:
 						 [{name: "Technique_of_IVF", url: "home/Technique_of_IVF.html", children: 
-						 	[{name: "Core_Elements_and_Their_Risks", url: "home/Technique_of_IVF/Core_Elements_and_Their_Risks.html", children: 
+						 	[{name: "Technique in IVF", url: "home/Technique_of_IVF/Technique_of_IVF.html"},
+						 	{name: "Core_Elements_and_Their_Risks", url: "home/Technique_of_IVF/Core_Elements_and_Their_Risks.html", children: 
 						 		[{name: "Medications for IVF Treatment", url: "home/Technique_of_IVF/Core_Elements_and_Their_Risks/medications.html"},
 						 		{name: "Embryo Transfer", url: "home/Technique_of_IVF/Core_Elements_and_Their_Risks/embryo_transfer.html"},
 						 		{name: "Transvaginal Oocyte Retrieval", url: "home/Technique_of_IVF/Core_Elements_and_Their_Risks/oocyte_retrieval.html"},
