@@ -351,7 +351,7 @@
 
 
 .circle_base {
-    border-radius: 50%;
+    border-radius: 25%;
     behavior: url(PIE.htc); /* remove if you don't care about IE8 */
     -webkit-background-clip: padding-box; /* for Safari */
     background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
@@ -368,6 +368,7 @@
     margin: 0;
 }
 
+
 .thumbnail .caption h1, .thumbnail .caption h2, 
 .thumbnail .caption h3, .thumbnail .caption h4, 
 .thumbnail .caption h5, .thumbnail .caption h6,
@@ -377,6 +378,9 @@
     text-shadow: .01em .01em .01em #3F3F3F;
     text-align: center;
 }
+
+
+
 
 .circle
 {
@@ -400,6 +404,16 @@
     -kthtml-transition: all 0.75s linear;
     transition: all 0.75s linear;
     cursor: pointer;
+}
+
+.thumbnail .caption h1, .thumbnail .caption h2, 
+.thumbnail .caption h3, .thumbnail .caption h4, 
+.thumbnail .caption h5, .thumbnail .caption h6, 
+.thumbnail .caption h5, .thumbnail .caption h6 {
+    margin: 5px 0 10px;
+    font-size: 2em;
+    text-shadow: .01em .01em .01em #3F3F3F;
+    text-align: center;
 }
 
 .icon_type2 {
@@ -438,5 +452,26 @@
     }
     
 
+}
+
+@media (min-width : 1026px) and (max-width : 1422px) {
+    .cta {
+        height: 8em;
+    }
+
+    .thumbnail .caption h1,.thumbnail .caption h2,
+    .thumbnail .caption h3,.thumbnail .caption h4,
+    .thumbnail .caption h5,.thumbnail .caption h6,
+    .thumbnail .caption p {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    h2 {
+        margin: 5px 0 10px;
+        font: bolder 6em "Arial", arial, sans-serif;
+        text-shadow: .01em .01em .01em #3F3F3F;
+    }
+    
 }
 </style>
