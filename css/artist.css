@@ -8,10 +8,17 @@ img {
 	height: 100%;
 	border: 5px solid #004787;
 }
+li {
+	font-size: 20px;
+}
+
+ul{
+	font-size: 20px;
+}
 
 p {
 	text-align: justify;
-	font-size: 18px;
+	font-size: 20px;
 }
 
 h1 {
@@ -45,9 +52,6 @@ li > a:focus {
 	
 }
 
-.fnt {
-	background-color: #004787;
-}
 
 table, th, td {
     border: 1px solid black;
@@ -71,7 +75,7 @@ caption{
 
 	p {
 		text-align: left;
-		font-size: 18px;
+		font-size: 14px;
 	}
 	
 	h1 {
@@ -86,6 +90,8 @@ caption{
 		margin-left: 0px;
 		margin-right: 0px;
 	}
+	
+
 }
 
 @media (max-width: 1275px) {

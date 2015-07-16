@@ -18,6 +18,7 @@ define([
 	"text!home/Social_Legal/financial.html",
 	"text!home/Social_Legal/offspring.html",
 	"text!home/Social_Legal/outcomes.html",
+	"text!home/Social_Legal/references.html",
 	"text!home/Technique_of_IVF.html",
 	"text!home/Technique_of_IVF/Additional_Elements_and_Their_Risks.html",
 	"text!home/Technique_of_IVF/Additional_Elements_and_Their_Risks/embryo_disposition.html",
