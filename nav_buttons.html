@@ -1,13 +1,13 @@
 {% if back %}
 <li>
-    <a href="{{ url }}" class="link frg dot btn btn-default">
+    <a href="{{ url }}" class="link frg dot btn ">
         <strong class="faunt">Back</strong>
     </a>
 </li>
 {% endif %}
 {% for item in list %}
 <li>
-    <a href="{{ item.url }}" class="link frg dot btn btn-default">
+    <a href="{{ item.url }}" class="link frg dot btn ">
         <strong class="faunt">{{ item.name|split|join }}</strong>
     </a>
 </li>
