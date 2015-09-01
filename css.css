@@ -1,0 +1,13 @@
+#begin {	
+  background: -webkit-linear-gradient(rgb(32, 82, 136), white); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgb(32, 82, 136), white); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgb(32, 82, 136), white); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgb(32, 82, 136), white); /* Standard syntax */
+}
+
+#end {	
+  background: -webkit-linear-gradient(white, rgb(32, 82, 136)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(white, rgb(32, 82, 136)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(white, rgb(32, 82, 136)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(white, rgb(32, 82, 136)); /* Standard syntax */
+}
