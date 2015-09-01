@@ -55,7 +55,7 @@ abbr[title] {
 }
 b,
 strong {
-  font-weight: bolder;
+  font-weight: bold;
 }
 dfn {
   font-style: italic;
@@ -4212,7 +4212,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-nav > li > a {
   padding-top: 10px;
   padding-bottom: 10px;
-  line-height: 20px
+  line-height: 20px;
 }
 @media (max-width: 767px) {
   .navbar-nav .open .dropdown-menu {
@@ -4837,14 +4837,11 @@ a.badge:focus {
 .nav-pills > li > a > .badge {
   margin-left: 3px;
 }
-
-
 .jumbotron {
   padding: 30px 15px;
   margin-bottom: 30px;
   color: inherit;
   background-color: #eee;
-  text-align: justify;
 }
 .jumbotron h1,
 .jumbotron .h1 {
@@ -4861,11 +4858,9 @@ a.badge:focus {
 .container .jumbotron,
 .container-fluid .jumbotron {
   border-radius: 6px;
-  
 }
 .jumbotron .container {
   max-width: 100%;
-
 }
 @media screen and (min-width: 768px) {
   .jumbotron {
