@@ -772,9 +772,11 @@
         var moduleRef = $(this).attr("href");
         Cookies.set('settings', {'modules': [moduleRef]}, {expires: 365});
 
-        $('img',this).attr('src', 'images/check.png');
-        $('i',this).attr('class', 'fa fa-check fa-5x');
-        $('i',this).attr('style', 'color:#00D400');
+        var height = $(this).parent().height();// use this to make sure check marks are the same size as the image it is replacing
+        $('img',this).attr('src', 'images/check.png');// swap image
+        $('img',this).attr('style', 'height:' + height + 'px');// set proper height
+        $('i',this).attr('class', 'fa fa-check fa-5x');// swap icon
+        $('i',this).attr('style', 'color:#00D400');// set icon color
         
         
     });
