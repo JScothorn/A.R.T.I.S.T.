@@ -40,7 +40,7 @@
 </head>
 
 <!-- Landing page -->
-<body id="page-top"onload="storeVisited()">
+<body id="page-top" onload="storeVisited()">
 
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
@@ -114,7 +114,7 @@
                 </div>
                 <div class="row room">
                     <div class="col-md-4 col-sm-6 portfolio-item">
-                        <a href="#medication_modal" class="portfolio-box portfolio-link content content" data-toggle="modal">
+                        <a id="medicationImage" href="#medication_modal" class="portfolio-box portfolio-link content" data-toggle="modal">
                         <img  src="images/medications.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
@@ -126,7 +126,7 @@
                     </a>
                     </div>
                     <div class="col-md-4 col-sm-6 portfolio-item">
-                        <a href="#oocyte_modal" class="portfolio-box portfolio-link content" data-toggle="modal">
+                        <a id="oocyteImage" href="#oocyte_modal" class="portfolio-box portfolio-link content" data-toggle="modal">
                         <img src="images/transvag.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
@@ -138,7 +138,7 @@
                     </a>
                     </div>
                     <div class="col-md-4 col-sm-6 portfolio-item">
-                        <a href="#embryo_modal" class="portfolio-box portfolio-link content" data-toggle="modal">
+                        <a id="ebryoImage" href="#embryo_modal" class="portfolio-box portfolio-link content" data-toggle="modal">
                         <img src="images/embryo_transfer.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
@@ -153,7 +153,7 @@
                 <div class="row">
                     <div class="col-md-2 hidden-sm portfolio-item"></div>
                     <div class="col-md-4 col-sm-6 portfolio-item">
-                        <a href="#ivf_culture_modal" class="portfolio-box portfolio-link content" data-toggle="modal">
+                        <a id="cultureImage" href="#ivf_culture_modal" class="portfolio-box portfolio-link content" data-toggle="modal">
                         <img src="images/culture.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
@@ -165,7 +165,7 @@
                     </a>
                     </div>
                     <div class="col-md-4 2 hidden-sm portfolio-item">
-                        <a href="#hormonal_modal" class="portfolio-box portfolio-link content" data-toggle="modal">
+                        <a id="hormonalImage" href="#hormonal_modal" class="portfolio-box portfolio-link content" data-toggle="modal">
                         <img src="images/hormone.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
@@ -191,7 +191,7 @@
                 </div>
                 <div class="row">
                     <div class="col-md-3 col-sm-6 portfolio-item">
-                        <a href="#sperm_injection_modal" class="portfolio-box portfolio-link content" data-toggle="modal">
+                        <a id="icsiImage" href="#sperm_injection_modal" class="portfolio-box portfolio-link content" data-toggle="modal">
                             <img src="images/injection.jpg" class="img-responsive" alt="">
                             <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
@@ -203,7 +203,7 @@
                         </a>
                     </div>
                 <div class="col-md-3 col-sm-6 portfolio-item">
-                    <a href="#hatchling_modal" class="portfolio-box portfolio-link content" data-toggle="modal">
+                    <a id="hatchImage" href="#hatchling_modal" class="portfolio-box portfolio-link content" data-toggle="modal">
                         <img src="images/hatching.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
@@ -215,7 +215,7 @@
                     </a>
                 </div>
                     <div class="col-md-3 col-sm-6 portfolio-item">
-                        <a href="#embryo_disp_modal" class="portfolio-box portfolio-link content" data-toggle="modal">
+                        <a id="dispoImage" href="#embryo_disp_modal" class="portfolio-box portfolio-link content" data-toggle="modal">
                             <img src="images/embryo_disposition.jpg" class="img-responsive" alt="">
                             <div class="portfolio-box-caption">
                                 <div class="portfolio-box-caption-content">
@@ -227,7 +227,7 @@
                         </a>
                     </div>
                     <div class="col-md-3 col-sm-6 portfolio-item">
-                        <a href="#research_modal" class="portfolio-box portfolio-link content" data-toggle="modal">
+                        <a id="researchImage" href="#research_modal" class="portfolio-box portfolio-link content" data-toggle="modal">
                             <img src="images/fate.jpg" class="img-responsive" alt="">
                             <div class="portfolio-box-caption">
                                 <div class="portfolio-box-caption-content">
@@ -254,9 +254,9 @@
             </div>
             <div class="row">
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#risks_to_women_modal" class="portfolio-link content" data-toggle="modal">
+                    <a id="femaleIcon" href="#risks_to_women_modal" class="portfolio-link content" data-toggle="modal">
                         <div class="img-responsive text-center" style="width:360px;height:100px;">
-                            <i class="fa fa-female fa-4x"></i>
+                            <i  class="fa fa-female fa-4x"></i>
                         </div>
                     </a>
                     <div class="portfolio-caption text-center">
@@ -264,9 +264,9 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#risks_to_offrping" class="portfolio-link content" data-toggle="modal">
+                    <a id="childIcon" href="#risks_to_offrping" class="portfolio-link content" data-toggle="modal">
                         <div class="img-responsive text-center" style="width:360px;height:100px;">
-                            <i class="fa fa-child fa-4x"></i>
+                            <i  class="fa fa-child fa-4x"></i>
                         </div>
                     </a>
                     <div class="portfolio-caption text-center">
@@ -274,9 +274,9 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#alt_modal" class="portfolio-link content" data-toggle="modal">
+                    <a id="stethoscopeIcon" href="#alt_modal" class="portfolio-link content" data-toggle="modal">
                         <div class="img-responsive text-center" style="width:360px;height:100px;">
-                            <i class="fa fa-stethoscope fa-4x"></i>
+                            <i  class="fa fa-stethoscope fa-4x"></i>
                         </div>
                     </a>
                     <div class="portfolio-caption text-center">
@@ -301,9 +301,9 @@
             </div> <!-- end spacing -->
 
             <div class="col-md-4 col-sm-6portfolio-item">
-                <a href="#social_modal" class="portfolio-link content" data-toggle="modal">
+                <a id="legalIcon" href="#social_modal" class="portfolio-link content" data-toggle="modal">
                     <div class="img-responsive text-center" style="width:360px;height:100px;">
-                        <i class="fa fa-legal fa-4x"></i>
+                        <i  class="fa fa-legal fa-4x"></i>
                     </div>
                 </a>
                 <div class="portfolio-caption text-center">
@@ -740,6 +740,8 @@
     <!-- jQuery Cookie -->
     <script src="js/jquery-cookie.js"></script>
 
+    <script src="js/underscore.js"></script>
+
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
@@ -757,44 +759,15 @@
 
     <script src="js/sweet-alert.min.js"></script>
 
-    <script type="js/underscore.js"></script>
+    <script src="js/myCookie.js"></script>
 
-    <script type="text/javascript">
+    <style type="text/css">
 
-    function success(){
-        sweetAlert('Congratulations!', 'You have completed a module!', 'success');
+    .clicked:hover{
+        background-image: url("images/check.png");
     }
-        
-    </script>
 
-    <script type="text/javascript">
-
-    $(".content").click(function(e){
-        e.preventDefault();
-
-        var moduleRef = $(this).attr("href");
-        Cookies.set('settings', {'modules': ['' + moduleRef]}, {expires: 365});
-
-        var height = $(this).parent().height();// use this to make sure check marks are the same size as the image it is replacing
-        $('img',this).attr('src', 'images/check.png');// swap image
-        $('img',this).attr('style', 'height:' + height + 'px');// set proper height
-        $('i',this).attr('class', 'fa fa-check fa-5x');// swap icon
-        $('i',this).attr('style', 'color:#00D400');// set icon color
-        
-        
-    });
-    </script>
-
-    <script type="text/javascript">
-        function storeVisited(){
-        var obj = Cookies.getJson();
-        var yourArray = _(obj).toArray();
-
-        _.each(yourArray,function(modules){
-            modules.css('images/check.png');
-        })
-    };
-    </script>
+    </style>
 
 </body>
 

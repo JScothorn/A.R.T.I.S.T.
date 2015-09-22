@@ -387,6 +387,9 @@ section h3.section-subheading {
     font-size: 20px;
     color: #fff;
 }
+#core_elements .portfolio-item .portfolio-link .portfolio-hover .clicked:hover{
+        background-image: url("images/check.png");
+    }
 
 #core_elements .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
     margin-top: -12px;
