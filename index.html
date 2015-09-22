@@ -40,7 +40,7 @@
 </head>
 
 <!-- Landing page -->
-<body id="page-top">
+<body id="page-top"onload="storeVisited()">
 
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
@@ -756,6 +756,9 @@
     <script src="js/agency.js"></script>
 
     <script src="js/sweet-alert.min.js"></script>
+
+    <script type="js/underscore.js"></script>
+
     <script type="text/javascript">
 
     function success(){
@@ -770,7 +773,7 @@
         e.preventDefault();
 
         var moduleRef = $(this).attr("href");
-        Cookies.set('settings', {'modules': [moduleRef]}, {expires: 365});
+        Cookies.set('settings', {'modules': ['' + moduleRef]}, {expires: 365});
 
         var height = $(this).parent().height();// use this to make sure check marks are the same size as the image it is replacing
         $('img',this).attr('src', 'images/check.png');// swap image
@@ -780,6 +783,17 @@
         
         
     });
+    </script>
+
+    <script type="text/javascript">
+        function storeVisited(){
+        var obj = Cookies.getJson();
+        var yourArray = _(obj).toArray();
+
+        _.each(yourArray,function(modules){
+            modules.css('images/check.png');
+        })
+    };
     </script>
 
 </body>
