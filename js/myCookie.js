@@ -37,3 +37,44 @@
         })
     };
     
+     var  InitializationJsCarousel = function(obj){
+
+                var carousel = $(obj).jcarousel({
+                    list: '.jcarousel-list'
+                });
+
+                $(obj)
+                    .on('jcarousel:create jcarousel:reload', function() {
+                        var element = $(this),
+                            width = element.innerWidth();
+
+                        // This shows 1 item at a time.
+                        // Divide `width` to the number of items you want to display,
+                        // eg. `width = width / 3` to display 3 items at a time.
+                        width = width / 1;
+                        element.jcarousel('items').css('width', width + 'px');
+                    })
+                    .jcarousel({
+                        // Core configuration goes here
+                    });
+
+                    $('.jcarousel-prev').jcarouselControl({
+                        target: '-=1',
+                        carousel: carousel
+                    });
+
+                    $('.jcarousel-next').jcarouselControl({
+                        target: '+=1',
+                        carousel: carousel
+                    });
+            }
+
+            $( "#medicationImage" ).click(function(){
+                InitializationJsCarousel('.jcarousel');
+            });
+
+            $(function(){
+                $('#drop').find('span').click(function(e){
+                $(this).parent().children('ol').toggle();
+                });
+            });
