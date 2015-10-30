@@ -303,9 +303,7 @@ section h3.section-subheading {
     -webkit-box-shadow: none;
     box-shadow: none;
 }
-.portfolio-modal .modal-content ol{
-    text-align: left;
-}
+
 .portfolio-modal .modal-content h2 {
     margin-bottom: 15px;
     font-size: 3em;
