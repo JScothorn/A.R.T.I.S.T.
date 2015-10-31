@@ -39,6 +39,11 @@ a {
     margin-bottom: 50px;
 }
 
+ul, ol{
+    list-style: none;
+    text-align: left;
+}
+
 a:hover,
 a:focus {
     color: #eb3812;

@@ -37,3 +37,23 @@
         })
     };
     
+
+    $(function() {
+    $('.jcarousel').jcarousel({
+        list: '.jcarousel-list'
+    });
+    $('.jcarousel-prev').jcarouselControl({
+        target: '-=1',
+        carousel: carousel
+    });
+
+    $('.jcarousel-next').jcarouselControl({
+        target: '+=1',
+        carousel: carousel
+    });
+    $('#drop').find('span').click(function(e){
+            $(this).parent().children('ol').toggle();
+    });
+});
+
+  
