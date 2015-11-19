@@ -37,23 +37,18 @@
         })
     };
     
-
-    $(function() {
-    $('.jcarousel').jcarousel({
-        list: '.jcarousel-list'
+$(window).load(function(){
+      $('.flexslider').flexslider({
+        slideshow: false,
+        directionNav: true,
+        itemWidth: 210,
+        itemMargin: 5,
+        maxItems: 1,
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
     });
-    $('.jcarousel-prev').jcarouselControl({
-        target: '-=1',
-        carousel: carousel
-    });
-
-    $('.jcarousel-next').jcarouselControl({
-        target: '+=1',
-        carousel: carousel
-    });
-    $('#drop').find('span').click(function(e){
-            $(this).parent().children('ol').toggle();
-    });
-});
+    
 
   
