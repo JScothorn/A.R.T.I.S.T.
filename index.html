@@ -330,14 +330,6 @@
                 <div class="col-md-4">
                     
                 </div>
-                <div class="col-md-4">
-                    <ul class="list-inline quicklinks">
-                        <li><a href="#">Privacy Policy</a>
-                        </li>
-                        <li><a href="#">Terms of Use</a>
-                        </li>
-                    </ul>
-                </div>
             </div>
         </div>
     </footer>
@@ -359,10 +351,10 @@
                 <div class="col-lg-12 text-center">
                 <h2 class="section-heading">Medications</h2>
                 
-                    <p>The success of ivf largely depends on growing multiple eggs at once</p>
-                    <p>Injections of the natural hormones fsh and/or lh (gonadotropins) are used for this purpose</p> 
-                    <p>Additional medications are used to prevent premature ovulation</p> 
-                    <p>An overly vigorous response can occur, or conversely an inadequate response</p> 
+                    <p><strong>The success of ivf largely depends on growing multiple eggs at once.
+                    Injections of the natural hormones fsh and/or lh (gonadotropins) are used for this purpose. 
+                    Additional medications are used to prevent premature ovulation. 
+                    An overly vigorous response can occur, or conversely an inadequate response</strong></p> 
                 
                 </div>
                 </div>
@@ -421,11 +413,11 @@
                         <div class="modal-body">
                             <h2>Transvaginal Oocyte Retrieval</h2>
                             <ul>
-                                <li>Eggs are removed from the ovary with a needle under ultrasound guidance</li>
-                                <li>Anesthesia is provided to make this comfortable</li>
-                                <li>Injury and infection are rare</li>
+                                <li>Eggs are removed from the ovary with a needle under ultrasound guidance.</li>
+                                <li>Anesthesia is provided to make this comfortable.</li>
+                                <li>Injury and infection are rare.</li>
                             </ul>
-                            <button type="button" onclick="success()" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
+                            <button type="button" onclick="success()" class="btn btn-primary closeBtn" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
                         </div>
                     </div>
                 </div>
@@ -448,16 +440,16 @@
                         <div class="modal-body">
                             <!-- Project Details Go Here -->
                             <h2>Embryo transfer</h2>
-                            <ul>
-                                <li>After a few days of development, the best appearing embryos are selected for transfer</li>
-                                <li>The number chosen influences the pregnancy rate and the multiple pregnancy rate</li>
-                                <li>A woman’s age and the appearance of the developing embryo have the greatest influences on pregnancy outcome</li>
-                                <li>Emryos are placed in the uterine cavity with a thin tube</li>
-                                <li>Excess embryos of sufficient quality that are not transferred can be frozen </li>
-                                <li>Recommendation charts (add in)</li>
-                            </ul>
+                            <div style="text-align:left;">
+                                <p>After a few days of development, the best appearing embryos are selected for transfer.
+                                The number chosen influences the pregnancy rate and the multiple pregnancy rate.
+                                A woman’s age and the appearance of the developing embryo have the greatest influences on pregnancy outcome.</p>
+                                <p>Emryos are placed in the uterine cavity with a thin tube.
+                                Excess embryos of sufficient quality that are not transferred can be frozen.</p>
+                                <p class="needs">Recommendation charts (add in)</p>
+                            </div>
                             
-                            <button type="button" onclick="success()" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
+                            <button type="button" onclick="success()" class="btn btn-primary closeBtn" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
                         </div>
                     </div>
                 </div>
@@ -480,11 +472,11 @@
                         <div class="modal-body">
                             <!-- Project Details Go Here -->
                             <h2>IVF and Embryo Culture</h2>
-                            <ul>
-                                <li>Sperm and eggs are placed together in specialized conditions (culture media, controlled temperature, humidity, and light) in hopes of fertilization</li>
-                                <li>Culture medium is designed to permit normal fertilization and early embryo development, but the content of the media is not standardized</li>
-                                <li>Embryo development in the lab helps distinguish embryos with more potential from those with less or none</li>
-                            </ul>
+                            <div style="text-align:left;">
+                                <p>Sperm and eggs are placed together in specialized conditions (culture media, controlled temperature, humidity, and light) in hopes of fertilization.</p>
+                                <p>Culture medium is designed to permit normal fertilization and early embryo development, but the content of the media is not standardized.</p>
+                                <p>Embryo development in the lab helps distinguish embryos with more potential from those with less or none.</p>
+                            </div>
                             <button type="button" onclick="success()" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
                         </div>
                     </div>
@@ -511,15 +503,15 @@
                             <ul>
                                 <li>Successful attachment of embryo(s) to the uterine lining depends on adequate hormonal support</li>
                                 <ul>
-                                    <li>Progesterone</li>
+                                    <li><strong>Progesterone</strong></li>
                                         <ul>
-                                            <li>Administered by intramuscular or vaginal route for 2 to 10 weeks</li>
-                                            <li>Routinely prescribed</li>
+                                            <li>Administered by intramuscular or vaginal route for 2 to 10 weeks.</li>
+                                            <li>Routinely prescribed.</li>
                                         </ul>
-                                    <li>Estradiol</li>
+                                    <li><strong>Estradiol</strong></li>
                                     <ul>
-                                        <li>Administered by oral, vaginal, intramuscular or transdermal route for 2 to 10 weeks</li>
-                                        <li>Sometimes prescribed</li>
+                                        <li>Administered by oral, vaginal, intramuscular or transdermal route for 2 to 10 weeks.</li>
+                                        <li>Sometimes prescribed.</li>
                                     </ul>
                                 </ul>
                             </ul>
@@ -542,51 +534,51 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
+                    <div class="col-lg-8 ">
+                        <div class="modal-body myModal">
                             <!-- Project Details Go Here -->
                             <h2>Intracytoplasmic Sperm Injection (ICSI)</h2>
                             <ol>
-                                <li>Purpose:</li>
-                                <ol id="drop">
-                                    <li><span>ICSI is used to increase the chance of fertilization when fertilization rates are anticipated to be lower than normal due to <em><u><i>male factor infertility</em></i></u></span>
-                                        <ol>
-                                            <li>Abnormal semen characteristics</li>
-                                            <li>Sperm problems (low count, poor motility, abnormal shape)</li>
-                                            <li>Congenital bilateral absence of the vas deferens (CBAVD)</li>
+                                <li><strong>Purpose:</strong></li>
+                                <ol>
+                                    <li>ICSI is used to increase the chance of fertilization when fertilization rates are anticipated to be lower than normal due to male factor infertility:</li>
+                                        <ol style="list-style:circle;">
+                                            <li >Abnormal semen characteristics.</li>
+                                            <li>Sperm problems (low count, poor motility, abnormal shape).</li>
+                                            <li>Congenital bilateral absence of the vas deferens (CBAVD).</li>
                                         
-                                                <ol>
-                                                    <li>Infertility caused by failure of the tubes connecting the testes to the penis to develop correctly</li>
-                                                    <li>Associated with Cystic Fibrosis</li>
-                                                    <li>Can be bypassed by aspirating sperm directly from the testicles or epididymis, and using them in IVF with ICSI to achieve fertilization</li>
+                                                <ol style="list-style:square;">
+                                                    <li>Infertility caused by failure of the tubes connecting the testes to the penis to develop correctly.</li>
+                                                    <li>Associated with Cystic Fibrosis.</li>
+                                                    <li>Can be bypassed by aspirating sperm directly from the testicles or epididymis, and using them in IVF with ICSI to achieve fertilization.</li>
                                                 </ol>
                                             <li>Non-obstructive azoospermia</li>
                                                 <ol>
-                                                    <li>Lack of sperm in ejaculate caused by failure of testes to produce sperm</li>
+                                                    <li>Lack of sperm in ejaculate caused by failure of testes to produce sperm.</li>
                                                 </ol>
-                                        </span></ol>
+                                        </ol>
                                         </li>
                                 </ol>
-                                <li>Procedure:</li>
+                                <li><strong>Procedure:</strong></li>
                                     <ol>
-                                        <li>ICSI involves the direct injection of a single sperm into the interior of an egg using an extremely thin glass needle</li>
+                                        <li>ICSI involves the direct injection of a single sperm into the interior of an egg using an extremely thin glass needle.</li>
                                     </ol>
-                                <li>Birth Defect Risks:</li>
+                                <li><strong>Birth Defect Risks:</strong></li>
                                     <ol>
-                                        <li>The absolute risk is very low. This risk is mainly related to infertility factors rather than IVF procedure. </li>
+                                        <li>The absolute risk is very low. This risk is mainly related to infertility factors rather than IVF procedure.</li>
                                     </ol>
-                                <li>Genetic Related Risks:</li>
-                                    <ol>
-                                        <li>An increased risk of genetic defects in offspring is reported</li>
-                                        <li>ICSI will not improve oocyte defects</li>
-                                        <li>Sex Chromosome Abnormalities</li>
-                                            <ol>
-                                                <li>Prevalence is slightly higher in children conceived via ICSI than is observed in the general IVF population (0.8% to 1.0% in ICSI offspring versus 0.2% in the general IVF population)</li>
-                                                <li>May reflect a direct paternal effect</li>
+                                <li><strong>Genetic Related Risks:</strong></li>
+                                    <ol style="list-style:circle;">
+                                        <li>An increased risk of genetic defects in offspring is reported.</li>
+                                        <li>ICSI will not improve oocyte defects.</li>
+                                        <li>Sex Chromosome Abnormalities:</li>
+                                            <ol style="list-style:square;">
+                                                <li>Prevalence is slightly higher in children conceived via ICSI than is observed in the general IVF population (0.8% to 1.0% in ICSI offspring versus 0.2% in the general IVF population).</li>
+                                                <li>May reflect a direct paternal effect.</li>
                                             </ol>
-                                        <li>CBAVD and CF</li>
+                                        <li>CBAVD and CF:</li>
                                             <ul>
-                                                <li>Men with CBAVD are affected with a mild form of cystic fibrosis (CF), and this gene will be passed on to their offspring</li>
+                                                <li>Men with CBAVD are affected with a mild form of cystic fibrosis (CF), and this gene will be passed on to their offspring.</li>
                                             </ul>
                                     </ol>
                             </ol>
@@ -613,9 +605,9 @@
                         <div class="modal-body">
                             <!-- Project Details Go Here -->
                             <h2>Assisted Hatching</h2>
-                            <ol>
-                                <li>Assisted hatching involves making a hole in the outer shell (zona pellucid) that surounds the embryo</li>
-                                <li>Hatching may make it easier for embryoes to espace from the shell which surrounds them</li>
+                            <ol style="list-style:circle;">
+                                <li>Assisted hatching involves making a hole in the outer shell (zona pellucid) that surounds the embryo.</li>
+                                <li>Hatching may make it easier for embryoes to espace from the shell which surrounds them.</li>
                             </ol>
                             <button type="button" onclick="success()" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
                         </div>
@@ -641,48 +633,45 @@
                             <!-- Project Details Go Here -->
                             <h2>Embryo Disposition</h2>
                             <ol>
-                                <li>Freezing of viable embryos not transferred after egg retrieval provides additional changes for pregnancy </li>
-                                <li>Frozen embryos do not always survive the process of freezing and thawing</li>
-                                <li>Freezing eggs before fertilization is currently less successful than freezing of fertilized eggs (embryos)</li>
-                                <li>Ethical and legal dilemmas can arise when couples separate or divorce; disposition agrements are essential</li>
-                                <li>It is the responsibility of each couple with frozen embryoes to remain in contact with ari on quarterly basis</li>
-                                <li>Cryopreservation</li>
+                                <li><p>Freezing of viable embryos not transferred after egg retrieval provides additional changes for pregnancy. Frozen embryos do not always survive the process of freezing and thawing.</p>
+                                <p>Freezing eggs before fertilization is currently less successful than freezing of fertilized eggs (embryos).</p>
+                                <p>Ethical and legal dilemmas can arise when couples separate or divorce; disposition agrements are essential. It is the responsibility of each couple with frozen embryoes to remain in contact with ARI on quarterly basis.</p></li>
+                                <li><strong>Cryopreservation:</strong></li>
                                     <ol>
-                                        <li>Purpose:</li>
+                                        <li><strong>Purpose:</strong></li>
                                             <ul>
-                                                <li>Remaining oocytes or embryos following IVF may be frozen (or “cryopreserved”) for future use</li>
+                                                <li>Remaining oocytes or embryos following IVF may be frozen (or “cryopreserved”) for future use.</li>
                                             </ul>
-                                        <li>Summary of Indications:</li>
-                                            <ul>
-                                                <li>To reduce the risks of multiple gestation</li>
-                                                <li>To preserve fertility potential in the face of certain necessary medical procedures</li>
-                                                <li>To increase the chance of having one or more pregnancies from a single cycle of ovarian stimulation</li>
-                                                <li>To minimize the medical risk and cost to the patient by decreasing the number of stimulated cycles and egg retrievals</li>
-                                                <li>To temporarily delay pregnancy and the risk of OHSS <a href="#">(link to OHSS)</a> </li>
+                                        <li><strong>Summary of Indications:</strong></li>
+                                            <ul style="list-style:circle;">
+                                                <li>To reduce the risks of multiple gestation.</li>
+                                                <li>To preserve fertility potential in the face of certain necessary medical procedures.</li>
+                                                <li>To increase the chance of having one or more pregnancies from a single cycle of ovarian stimulation.</li>
+                                                <li>To minimize the medical risk and cost to the patient by decreasing the number of stimulated cycles and egg retrievals.</li>
+                                                <li>To temporarily delay pregnancy and the risk of OHSS <a class="needs" href="#">(link to OHSS)</a>.</li>
                                             </ul>
-                                        <li>Risks:</li>
-                                            <ul>
+                                        <li><strong>Risks:</strong></li>
+                                            <ul style="list-style:circle;">
                                                 <li>Overall pregnancy rates at the national level with frozen embryos are lower than with fresh embryos.</li>
                                                 <li>Data do not indicate any likelihood that children born of embryos that have been cryopreserved and thawed will experience greater risk of abnormalities than those born of fresh embryos.</li>
                                             </ul>
                                     </ol>
-                                <li>Legal Considerations</li>
-                                    <ol>
-                                        <li>Because of the possibility of you and/or your partner’s separation, death or incapacitation, it is important to decide on the disposition of any embryo(s), fresh or cryopreserved that remain in the laboratory. Since this is a rapidly evolving field, both medically and legally, ARI cannot guarantee what the available or acceptable avenues for disposition will be at any future date</li>
+                                <li><strong>Legal Considerations:</strong></li>
+                                    <ol style="list-style:circle;">
+                                        <li><p>Because of the possibility of you and/or your partner’s separation, death or incapacitation, it is important to decide on the disposition of any embryo(s), fresh or cryopreserved that remain in the laboratory. Since this is a rapidly evolving field, both medically and legally, ARI cannot guarantee what the available or acceptable avenues for disposition will be at any future date.</p></li>
                                         <li>Alternatives:</li>
-                                            <ul>
-                                                <li>Discarding the cryopreserved embryo(s)</li>
-                                                <li>Donating the cryopreserved embryo(s) for approved research studies</li>
-                                                <li>Donating the cryopreserved embryos to another couple in order to attempt pregnancy (You may be asked to undergo additional infectious disease testing and screening recommended by the FDA if you select this option.)</li>
+                                            <ul style="list-style:square;">
+                                                <li>Discarding the cryopreserved embryo(s).</li>
+                                                <li>Donating the cryopreserved embryo(s) for approved research studies.</li>
+                                                <li>Donating the cryopreserved embryos to another couple in order to attempt pregnancy (You may be asked to undergo additional infectious disease testing and screening recommended by the FDA if you select this option).</li>
                                             </ul>
-                                        <li>Embryos are understood to be your property, with rights of surviorship. No use can be made of these embryos without the consent of both partners (if applicable)</li>
-                                            <ul>
-                                                <li>In the event of divorce or dissolution of the marriage or partnership, the ownership and/or other rights to the embryo(s) will be as directed by the court decree and/or settlement agreement</li>
-                                                <li>In the event of the death or incapacitation of one partner, the embryo(s) will become the sole and exclusive property of the surviving partner</li>
-                                                <li>In the event of death or incapacitation of both partners or of a last surviving partner, the embryo(s) shall become the sole and exclusive property of ARI. In this event, I/we elect to: (please select and initial your choice)</li>
-                                                    <ul>
-                                                        <li>Insert chart</li>
-                                                    </ul>
+                                        <li>Embryos are understood to be your property, with rights of surviorship. No use can be made of these embryos without the consent of both partners (if applicable):</li>
+                                            <ul style="list-style:square;">
+                                                <li>In the event of divorce or dissolution of the marriage or partnership, the ownership and/or other rights to the embryo(s) will be as directed by the court decree and/or settlement agreement.</li>
+                                                <li>In the event of the death or incapacitation of one partner, the embryo(s) will become the sole and exclusive property of the surviving partner.</li>
+                                                <li>In the event of death or incapacitation of both partners or of a last surviving partner, the embryo(s) shall become the sole and exclusive property of ARI. In this event, I/we elect to: (please select and initial your choice).</li>
+                                                <li class="needs">Insert chart</li>
+                                                    
                                             </ul>
                                     </ol>
                             </ol>
@@ -708,7 +697,8 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <!-- Project Details Go Here -->
-                            <h2>research_modal</h2>
+                            <h2>Research</h2>
+                            <h1 class="needs">I have nothing for this page?</h1>
                             <button type="button" onclick="success()" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
                         </div>
                     </div>

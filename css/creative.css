@@ -42,8 +42,16 @@ a {
 ul, ol{
     list-style: none;
     text-align: left;
+    line-height: 2.5;
+    font-size: 18px;
 }
 
+.myModal{
+    width: 150%;
+}
+.needs{
+    color: red;
+}
 a:hover,
 a:focus {
     color: #eb3812;
@@ -60,8 +68,9 @@ h6 {
 
 p {
     margin-bottom: 20px;
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 18px;
+    line-height: 2.5;
+  
 }
 
 
