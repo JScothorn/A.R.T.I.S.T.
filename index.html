@@ -2,7 +2,11 @@
 <html lang="en">
 
 <head>
-
+    <!-->
+        Author: Justin Scothorn, Jeremy Brunn
+        Wright State University - Knoesis
+        2015
+    </!-->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -78,7 +82,7 @@
     <header>
         <div class="header-content">
             <div class="header-content-inner">
-                <h1>ARTIST</h1>
+                <h1 style="font-size:50px;">ARTIST</h1>
                 <hr>
                 <a href="#coreE" class="btn btn-primary btn-xl page-scroll">Techniques</a>
                 <a href="#risks" class="btn btn-primary btn-xl page-scroll">Risks</a>
@@ -94,10 +98,10 @@
                  Our goal is to help you better understand Assisted Reproduction before you consent
             </h1>
             <hr>
-            <div class="col-md-10 col-md-offset-1" style="font-size:large;">
-                <h3 class="needs">
-                    This will be a video link!
-                </h3><br>
+            <div class="col-md-10 col-md-offset-1" class="videoWrapper">
+                
+                <iframe width="640" height="360" src="https://www.youtube.com/embed/lI7GtLL_rTA?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                <br>
             </div>
         </section>
     </div>
@@ -358,7 +362,7 @@
                 </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-12 ">
+                    <div class="col-lg-12 col-xs-8">
                         <section class="slider">
                             <div class="flexslider ">
                                 <ul class="slides">
@@ -445,8 +449,10 @@
                                 A woman’s age and the appearance of the developing embryo have the greatest influences on pregnancy outcome.</p>
                                 <p>Emryos are placed in the uterine cavity with a thin tube.
                                 Excess embryos of sufficient quality that are not transferred can be frozen.</p>
-                                <p class="needs">Recommendation charts (add in)</p>
+                                
                             </div>
+                            <img src="images/embryoxfer.png" alt="" style="max-width:100%;
+max-height:100%;">
                             
                             <button type="button" onclick="success()" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
                         </div>
@@ -533,7 +539,7 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 ">
+                    <div class="col-lg-8 col-xs-8">
                         <div class="modal-body myModal">
                             <!-- Project Details Go Here -->
                             <h2>Intracytoplasmic Sperm Injection (ICSI)</h2>
@@ -627,7 +633,7 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 ">
+                    <div class="col-lg-8 col-xs-8">
                         <div class="modal-body myModal">
                             <!-- Project Details Go Here -->
                             <h2>Embryo Disposition</h2>
@@ -647,7 +653,7 @@
                                                 <li>To preserve fertility potential in the face of certain necessary medical procedures.</li>
                                                 <li>To increase the chance of having one or more pregnancies from a single cycle of ovarian stimulation.</li>
                                                 <li>To minimize the medical risk and cost to the patient by decreasing the number of stimulated cycles and egg retrievals.</li>
-                                                <li>To temporarily delay pregnancy and the risk of OHSS <a class="needs" href="#">(link to OHSS)</a>.</li>
+                                                <li>To temporarily delay pregnancy and risk of Ovarian Hyper-stimulation Syndrome.</li>
                                             </ul>
                                         <li><strong>Risks:</strong></li>
                                             <ul style="list-style:circle;">
@@ -669,7 +675,8 @@
                                                 <li>In the event of divorce or dissolution of the marriage or partnership, the ownership and/or other rights to the embryo(s) will be as directed by the court decree and/or settlement agreement.</li>
                                                 <li>In the event of the death or incapacitation of one partner, the embryo(s) will become the sole and exclusive property of the surviving partner.</li>
                                                 <li>In the event of death or incapacitation of both partners or of a last surviving partner, the embryo(s) shall become the sole and exclusive property of ARI. In this event, I/we elect to: (please select and initial your choice).</li>
-                                                <li class="needs">Insert chart</li>
+                                                <li><img src="images/dispoChart.png" alt="" style="max-width:100%;
+max-height:100%;"></li>
                                                     
                                             </ul>
                                     </ol>
@@ -717,7 +724,7 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 ">
+                    <div class="col-lg-8 col-xs-8">
                         <div class="modal-body myModal">
                             <!-- Project Details Go Here -->
                             <h2>Risks to the Woman</h2>
@@ -808,7 +815,7 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 ">
+                    <div class="col-lg-8 col-xs-8">
                         <div class="modal-body myModal">
                             <!-- Project Details Go Here -->
                             <h2>Risks To Offspring</h2>
@@ -1002,7 +1009,7 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8">
+                    <div class="col-lg-8 col-xs-8">
                         <div class="modal-body myModal">
                             <!-- Project Details Go Here -->
                             <h2>Social/Legal</h2>
@@ -1137,11 +1144,12 @@
     .flexslider .slides img {
       margin-left: 50px;
       margin-right: 100px;
+      max-width: 100%;
     }
 
     .flex-direction-nav .flex-next{
         right: 0 !important;
-        margin-right: -280px;
+        margin-right: -100px;
         opacity: 1 !important;
     }
     
