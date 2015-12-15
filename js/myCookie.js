@@ -23,7 +23,7 @@
         list = _.pluck(list,"modules")[0]||[];
 
         list.push(moduleRef)
-        Cookies.set('settings', {'modules': list}, {expires: 365});
+        Cookies.set('settings', {'modules': list}, {expires: 7});
         addCheckmark(moduleRef)
         
     });
