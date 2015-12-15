@@ -98,7 +98,7 @@
                  Our goal is to help you better understand Assisted Reproduction before you consent.
             </h1>
             <hr>
-            <div class="col-md-10 col-md-offset-1" class="videoWrapper">
+            <div class="col-md-10 col-md-offset-1 DrVid">
                 
                 <iframe width="640" height="360" src="https://www.youtube.com/embed/lI7GtLL_rTA?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
                 <br>
@@ -1131,6 +1131,14 @@ max-height:100%;">
     <!-- Carousel -->
     <script src="jquery.flexslider.js"></script>
 
+    <script src="js/jquery.fitvids.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".DrVid").fitVids();
+  });
+</script>
+    </script>
+
     <style type="text/css">
 
     .flex-direction-nav a {
@@ -1151,7 +1159,9 @@ max-height:100%;">
         margin-right: -100px;
         opacity: 1 !important;
     }
-    
+    .navbar-default{
+        border-color: transparent;
+    }
     </style>
     
     
