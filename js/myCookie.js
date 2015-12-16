@@ -27,6 +27,12 @@
         addCheckmark(moduleRef)
         
     });
+
+    var reset = function(){
+        var list = Cookies.getJSON()||{};
+        Cookies.remove('settings', {'modules': list}, {expires: 7});
+        location.reload();
+    }
    
     var storeVisited = function(){
 
