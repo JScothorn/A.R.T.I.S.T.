@@ -46,6 +46,10 @@ ul, ol{
     font-size: 18px;
 }
 
+.leftLine{
+    text-align: left;
+}
+
 .myModal{
     width: 150%;
 }
