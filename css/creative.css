@@ -38,7 +38,11 @@ a {
 .room{
     margin-bottom: 50px;
 }
-
+.modal-body{
+    position: relative;
+    padding: 15px;
+    width: 100%;
+}
 ul, ol{
     list-style: none;
     text-align: left;
