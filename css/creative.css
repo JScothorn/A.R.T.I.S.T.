@@ -14,6 +14,10 @@ body {
     font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;
 }
 
+.offButtton{
+    margin-left: 50%;
+}
+
 hr {
     max-width: auto;
     border-color: #f05f40;
@@ -53,6 +57,7 @@ ul, ol{
 .leftLine{
     text-align: left;
 }
+
 
 .myModal{
     width: 150%;
@@ -580,6 +585,7 @@ fieldset[disabled] .btn-primary.active {
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
     font-weight: 700;
     font-size: 25px;
+    
 }
 
 .btn-xl {
